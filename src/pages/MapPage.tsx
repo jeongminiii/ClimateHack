@@ -357,9 +357,9 @@ function MapPage() {
 
       <div className="flex h-[calc(100vh-80px)]">
         {/* 사이드바 */}
-        <aside className="w-80 bg-slate-900/50 backdrop-blur border-r border-blue-500/20 overflow-y-auto">
-          {/* 필터 */}
-          <div className="p-4 border-b border-blue-500/20">
+        <aside className="w-80 bg-slate-900/50 backdrop-blur border-r border-blue-500/20 flex flex-col">
+          {/* 필터 - 고정 */}
+          <div className="p-4 border-b border-blue-500/20 flex-shrink-0">
             <h3 className="text-sm font-medium text-gray-400 mb-3">위험도 필터</h3>
             <div className="flex flex-wrap gap-2">
               {[
@@ -383,8 +383,8 @@ function MapPage() {
             </div>
           </div>
 
-          {/* 설명 */}
-          <div className="p-4 border-b border-blue-500/20">
+          {/* 설명 - 고정 */}
+          <div className="p-4 border-b border-blue-500/20 flex-shrink-0">
             <div className="flex items-start gap-2 p-3 bg-blue-500/10 rounded-lg border border-blue-500/20">
               <Info className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
               <p className="text-sm text-blue-200/80">
@@ -393,8 +393,8 @@ function MapPage() {
             </div>
           </div>
 
-          {/* 위험 요소 범례 */}
-          <div className="p-4 border-b border-blue-500/20">
+          {/* 위험 요소 범례 - 고정 */}
+          <div className="p-4 border-b border-blue-500/20 flex-shrink-0">
             <h3 className="text-sm font-medium text-gray-400 mb-3">위험 요소</h3>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm">
@@ -421,8 +421,8 @@ function MapPage() {
           </div>
 
           {/* 지역 목록 */}
-          <div className="p-4">
-            <h3 className="text-sm font-medium text-gray-400 mb-3">
+          <div className="p-4 flex-1 min-h-0 flex flex-col">
+            <h3 className="text-sm font-medium text-gray-400 mb-3 flex-shrink-0">
               분석 지역 ({filteredAreas.length}개)
             </h3>
             {loading ? (
@@ -430,7 +430,7 @@ function MapPage() {
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
               </div>
             ) : (
-              <div className="space-y-2 max-h-[calc(100vh-480px)] overflow-y-auto">
+              <div className="space-y-2 overflow-y-auto flex-1">
                 {filteredAreas.map(area => (
                   <button
                     key={area.id}
