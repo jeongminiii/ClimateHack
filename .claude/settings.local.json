@@ -13,7 +13,10 @@
       "WebFetch(domain:climate.gg.go.kr)",
       "Skill(gg-climate-api)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: 미세플라스틱 해양유출 위험지도 서비스 구현\n\n- 경기도 기후 API 활용 (침수위험지도, 비오톱, 공원 데이터)\n- 지역별 위험도 점수(0-100) 계산 로직\n- Leaflet 지도 기반 시각화\n- 위험도 필터링 및 상세 정보 패널\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)"
     ]
   }
 }
