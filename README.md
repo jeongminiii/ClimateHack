@@ -1,5 +1,3 @@
-## 경기 기후 바이브코딩 해커톤
-
 # 🌊 미세플라스틱 해양유출 위험지도
 
 ### Microplastic Marine Runoff Risk Map
@@ -85,5 +83,6 @@
 해양 유입
 
 
-**Happy Hacking! ⚡**
 ```
+
+**경기 기후 바이브코딩 해커톤 Happy Hacking! ⚡**
