@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <!-- Background -->
+  <rect x="16" y="16" width="224" height="224" rx="48" fill="#0B1220"></rect>
+
+  <!-- Map Pin (ORANGE) -->
+  <path d="M128 56
+           C98 56, 74 80, 74 110
+           C74 154, 128 200, 128 200
+           C128 200, 182 154, 182 110
+           C182 80, 158 56, 128 56Z" fill="#F97316"></path>
+
+  <!-- Pin Inner (clean) -->
+  <circle cx="128" cy="110" r="28" fill="#0B1220"></circle>
+
+  <!-- Sea wave -->
+  <path d="M56 196
+           C78 176, 98 176, 120 196
+           C142 216, 162 216, 184 196
+           C200 182, 214 182, 232 196" stroke="#60A5FA" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
