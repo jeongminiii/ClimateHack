@@ -2,6 +2,8 @@
 
 ### Microplastic Marine Runoff Risk Map
 
+https://starter-project-zeta.vercel.app/info
+
 <p align="center">
   <img src="https://img.shields.io/badge/Environment-Climate%20Data-blue" />
   <img src="https://img.shields.io/badge/Public%20Data-Gyeonggi%20Province-green" />
